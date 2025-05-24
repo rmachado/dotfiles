@@ -1,0 +1,6 @@
+[submodule "kickstart.nvim"]
+	path = kickstart.nvim
+	url = https://github.com/rmachado/kickstart.nvim.git
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/rmachado/kickstart.nvim.git
