@@ -30,3 +30,7 @@ ln -s $PWD/.config/kitty $HOME/.config
 
 # NeoVim
 ln -s $PWD/nvim $HOME/.config
+
+# Aerospace
+ln -s $PWD/.aerospace.toml $HOME/.aerospace.toml
+
