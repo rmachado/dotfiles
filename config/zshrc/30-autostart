@@ -21,3 +21,12 @@ else
         echo "Start Hyprland with command Hyprland"
     fi
 fi
+
+source /usr/share/nvm/init-nvm.sh
+
+# -----------------------------------------------------
+# XInit
+# -----------------------------------------------------
+# if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
+#   exec startx
+# fi
