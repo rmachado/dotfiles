@@ -2,5 +2,8 @@
 duration = "30m"
 mode = "center"
 sorting = "random"
-path = "~/wallpaper"
-exec = "~/.config/wpaperd/exec.sh"
+path = "/home/rodrigo/wallpaper"
+exec = "/home/rodrigo/.config/wpaperd/exec.sh"
+
+[any]
+group = 1
