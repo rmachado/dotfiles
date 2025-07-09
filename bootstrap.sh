@@ -25,8 +25,9 @@ ln -s $PWD/.zshrc $HOME/.zshrc
 # Tmux
 ln -s $PWD/.tmux.conf $HOME/.tmux.conf
 
-# Kitty
-ln -s $PWD/.config/kitty $HOME/.config
+# Terminal
+# ln -s $PWD/.config/kitty $HOME/.config
+ln -s $PWD/config/ghostty $HOME/.config
 
 # NeoVim
 ln -s $PWD/nvim $HOME/.config
