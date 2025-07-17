@@ -6,6 +6,8 @@
 # General
 # -----------------------------------------------------
 alias c='clear'
+alias first='head -n 1'
+alias last='tail -n 1'
 alias nf='fastfetch'
 alias pf='fastfetch'
 alias ff='fastfetch'
@@ -22,3 +24,33 @@ alias wifi='nmtui'
 # -----------------------------------------------------
 alias d='docker'
 alias dc='docker compose'
+
+# -----------------------------------------------------
+# Kubernetes
+# -----------------------------------------------------
+alias kpods="kubectl get pods --field-selector=status.phase=Running"
+alias kpodnames="kpods -o=jsonpath='{range .items..metadata}{.name}{\"\n\"}{end}'"
+
+function kns() {
+  kubectl config set-context --current --namespace="$1"
+}
+
+function ksh() {
+  kubectl exec -it "$1" -- sh
+}
+
+function kbash() {
+  kubectl exec -it "$1" -- bash
+}
+
+function krails() {
+  kubectl exec -it "$1" -- bundle exec rails c
+}
+
+function klogs() {
+  kubectl logs "$1"
+}
+
+function kport() {
+  kubectl port-forward "$1" "$2"
+}
