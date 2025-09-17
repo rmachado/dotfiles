@@ -13,3 +13,5 @@ curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
 # Fonts
 sudo pacman -S ttf-jetbrains-mono-nerd
 
+# Hyprpanel
+yay -S ags-hyprpanel-git

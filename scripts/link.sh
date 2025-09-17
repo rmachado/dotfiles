@@ -5,7 +5,7 @@
 # =============================================================
 
 HOME_LINKS=(.zshrc .tmux.conf)
-CONFIG_LINKS=(hypr kitty ohmyposh waybar wpaperd zshrc)
+CONFIG_LINKS=(hypr kitty ohmyposh hyprpanel wpaperd zshrc)
 
 for file in "${HOME_LINKS[@]}"
 do
