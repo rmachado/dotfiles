@@ -54,3 +54,7 @@ function klogs() {
 function kport() {
   kubectl port-forward "$1" "$2"
 }
+
+function set-monitor() {
+  hyprctl dispatch dpms "$1" HDMI-A-1
+}
